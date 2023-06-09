@@ -1,0 +1,28 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<ul>
+    <li *ngFor="let item of items">
+        <a routerLink="/item/{{item.id}}">
+        <img src="{{item.imageUrl}}" alt="Item Images" class="img-fluid">
+        <div class="content">
+            <div class="name">{{item.name}}</div>
+        </div>
+        <div class="product-item-footer">
+            <div class="tags">
+                <span *ngFor="let tags of item.tags">
+                {{tags}}
+            </span>
+            </div>
+            <div class="delivery-time">
+                <span>Delivery Time🕕</span>
+                {{item.deliveryTime}}
+                <span>minutes</span>
+            </div>
+        </div>
+        <div class="price">
+            <span>₹</span>
+            {{item.price}}
+        </div>
+        </a>
+    </li>
+</ul>

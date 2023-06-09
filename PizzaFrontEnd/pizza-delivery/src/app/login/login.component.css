@@ -1,0 +1,36 @@
+.card{
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: darkblue;
+    background: linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(260, 29%, 36%, 1) 100%);
+}
+
+.card h1,h6{
+    color:white;
+}
+
+label{
+    color: white;
+    font-size: 12px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+.form-group input{
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+}
+button{
+    cursor: pointer;
+    
+}
+.form-group span{
+    color: red;
+}
